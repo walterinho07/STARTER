@@ -53,7 +53,7 @@ function startStarter() {
     playSound(AUDIO_PRONTI, "PRONTI (On Your Marks)");
 
     // Pausa Fissa: 1 secondo (1000 ms) tra Pronti e Partenza
-    const RITARDO_PRONTI_PARTENZA = 5000; 
+    const RITARDO_PRONTI_PARTENZA = 6000; 
 
     // --- FASE 2: PARTENZA (SET) ---
 
@@ -93,5 +93,6 @@ function startStarter() {
 // ===================================================================
 // 4. INIZIALIZZAZIONE
 // ===================================================================
+
 
 startButton.addEventListener('click', startStarter);
