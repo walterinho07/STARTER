@@ -57,15 +57,15 @@ function startStarter() {
     playSound(suonoPronti, "PRONTI (On Your Marks)");
 
     // TEMPO TRA PRONTI E PARTENZA
-    const RITARDO_PRONTI_PARTENZA = 3000; 
+    const RITARDO_PRONTI_PARTENZA = 8000; 
 
     // FASE 2: PARTENZA
     setTimeout(() => {
         playSound(suonoPartenza, "PARTENZA (Get Set)");
 
         // Ritardo casuale Sparo
-        const minRitardo = 2000; 
-        const maxRitardo = 5000; 
+        const minRitardo = 1500; 
+        const maxRitardo = 3000; 
         const ritardoCasuale = Math.random() * (maxRitardo - minRitardo) + minRitardo;
 
         // FASE 3: SPARO
@@ -86,5 +86,6 @@ function startStarter() {
 
 startButton.removeEventListener('click', startStarter);
 startButton.addEventListener('click', startStarter);
+
 
 
