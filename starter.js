@@ -68,6 +68,8 @@ function startStarter() {
         const maxRitardo = 3000; 
         const ritardoCasuale = Math.random() * (maxRitardo - minRitardo) + minRitardo;
 
+        console.log(`Ritardo sparo calcolato: ${ritardoCasuale.toFixed(0)} ms`);
+
         // FASE 3: SPARO
         setTimeout(() => {
             playSound(suonoSparo, "SPARO (Go)!");
@@ -86,6 +88,7 @@ function startStarter() {
 
 startButton.removeEventListener('click', startStarter);
 startButton.addEventListener('click', startStarter);
+
 
 
 
