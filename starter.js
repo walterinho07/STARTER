@@ -52,7 +52,7 @@ function startStarter() {
     
     playSound(AUDIO_PRONTI, "PRONTI (On Your Marks)");
 
-    // Pausa Fissa: 1 secondo (1000 ms) tra Pronti e Partenza
+    // Pausa Fissa: 6 secondi (6000 ms) tra Pronti e Partenza
     const RITARDO_PRONTI_PARTENZA = 6000; 
 
     // --- FASE 2: PARTENZA (SET) ---
@@ -62,7 +62,7 @@ function startStarter() {
 
         // Calcolo del Ritardo Casuale (Tempo di Attesa dello Sparo)
         // Intervallo IAAF minimo e massimo tipico è tra 0.1 e 6.0 secondi.
-        const minRitardo = 2000; // 1.0 secondi
+        const minRitardo = 1500; // 1.0 secondi
         const maxRitardo = 3000; // 2.0 secondi
 
         // Genera un numero casuale tra minRitardo e maxRitardo
@@ -96,3 +96,4 @@ function startStarter() {
 
 
 startButton.addEventListener('click', startStarter);
+
